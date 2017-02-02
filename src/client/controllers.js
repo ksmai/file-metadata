@@ -26,5 +26,9 @@ exports.fileMetadataCtrl = ['$scope', '$http',
         console.log(err);
       });
     };
+
+    setTimeout(function() {
+      $scope.$emit('fileMetadataCtrl');
+    }, 0);
   }
 ];
